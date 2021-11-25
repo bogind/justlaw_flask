@@ -5,36 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>האקתון JustLaw - צוות הרתעה בירוקרטית</title>
-    <style>
-        html, body{
-            width: 100%;
-            height: 100%;
-            direction: rtl;
-        }
-        ul{
-            list-style-type: none;    
-        }
-        li {
-            line-height: 14px;
-            margin-bottom: 15px;
-        }
-        li > a{
-            background-color:rgb(84, 179, 243);
-            border-radius: 5px;
-            padding: 5px;
-            line-height: 12px;
-            cursor: pointer;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
+    <div id="header">
+        <h1 id="header-title">
+            העוזר האישי שלך בהתמודדות עם בירוקרטיה
+        </h1>
+    </div>
+    <div id="links">
         <h2>סוגי בקשות</h2>
         <ul>
-            <li><a>הוכחת משהו כלכלית</a></li>
-            <li><a>הוכחת עוד משהו כלכלית</a></li>
-            <li><a>משהו מסובך מביטוח לאומי</a></li>
-            <li><a>הבטחת הכנסה</a></li>
+            <li><a href="./income_assurance">הבטחת הכנסה</a></li>
+            <li><a>מזונות</a></li>
+            <li><a href="./prisat_hov">פריסת חוב להוצאה לפועל</a></li>
+            <li><a>דיור ציבורי</a></li>
+            <li><a>סיוע משפטי</a></li>
+            <li><a>סיוע חומרי מהרווחה</a></li>
         </ul>
+        <select name="find_files">מצא לי מסמכים לפי בקשה</select>
+    </div>
 </body>
 </html>
